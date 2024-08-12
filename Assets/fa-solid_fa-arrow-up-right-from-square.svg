@@ -1,0 +1,10 @@
+<svg id="fa-solid_fa-arrow-up-right-from-square" data-name="fa-solid fa-arrow-up-right-from-square" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6806" data-name="Rectangle 6806" width="20" height="15" fill="#afafaf"/>
+    </clipPath>
+  </defs>
+  <g id="Group_47493" data-name="Group 47493" clip-path="url(#clip-path)">
+    <path id="Path_100242" data-name="Path 100242" d="M0,2.5A2.5,2.5,0,0,1,2.5,0h15A2.5,2.5,0,0,1,20,2.5v10A2.5,2.5,0,0,1,17.5,15H2.5A2.5,2.5,0,0,1,0,12.5Zm1.875,0v.863L8.613,8.895a2.18,2.18,0,0,0,2.773,0l6.738-5.531v-.9A.651.651,0,0,0,17.5,1.84H2.5a.65.65,0,0,0-.625.625Zm0,3.289V12.5a.626.626,0,0,0,.625.625h15a.627.627,0,0,0,.625-.625V5.789l-5.547,4.555a4.112,4.112,0,0,1-5.191,0Z" fill="#afafaf"/>
+  </g>
+</svg>

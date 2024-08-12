@@ -1,0 +1,10 @@
+<svg id="fa-regular_fa-envelope" data-name="fa-regular fa-envelope" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6805" data-name="Rectangle 6805" width="14" height="14" fill="#afafaf"/>
+    </clipPath>
+  </defs>
+  <g id="Group_47491" data-name="Group 47491" clip-path="url(#clip-path)">
+    <path id="Path_100241" data-name="Path 100241" d="M8,1A1,1,0,0,1,9,0h3.972a1.024,1.024,0,0,1,.409.076,1.441,1.441,0,0,1,.325.215s0,0,0,0A1.127,1.127,0,0,1,14,1V5a1,1,0,0,1-2,0V3.416L6.706,8.706A1,1,0,0,1,5.294,7.294L10.584,2H9A1,1,0,0,1,8,1M0,3A2,2,0,0,1,2,1H5A1,1,0,0,1,5,3H2v9h9V9a1,1,0,0,1,2,0v3a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2Z" fill="#afafaf"/>
+  </g>
+</svg>
