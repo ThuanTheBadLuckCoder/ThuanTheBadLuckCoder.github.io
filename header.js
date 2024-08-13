@@ -6,3 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('header-container').innerHTML = data;
         });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('leftNavi.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('left-navbar').innerHTML = data;
+        });
+});
