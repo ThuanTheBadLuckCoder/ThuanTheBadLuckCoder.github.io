@@ -3181,9 +3181,10 @@ progress {
 
 .navbar>.container,.navbar>.container-fluid,.navbar>.container-sm,.navbar>.container-md,.navbar>.container-lg,.navbar>.container-xl,.navbar>.container-xxl {
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .navbar-brand {
