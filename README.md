@@ -1,4 +1,4 @@
-**ThuanTheBadLuckCoder Portfolio**
+<h1>ThuanTheBadLuckCoder Portfolio</h1>
 
 Welcome to my portfolio! I'm Đoàn Trần Thuận, a passionate Front-end Developer with a strong background in WordPress and ReactJS. As a final-year Computer Science student at International University – VNUHCM, I have accumulated valuable experience in web development through various projects and internships.
 
