@@ -11066,7 +11066,8 @@ progress {
 }
 
 .bd-navbar .navbar-brand:hover {
-    transform: rotate(-5deg) scale(1.1)
+    background-color: #08799050;
+    border-radius: 20px;
 }
 
 .bd-navbar .navbar-toggler,.bd-navbar .nav-link {
@@ -11730,4 +11731,9 @@ table tbody {
 
 .bd-text-purple {
     color: var(--bd-violet)
+}
+
+
+.custom_github {
+    display: flex;
 }
