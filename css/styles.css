@@ -11766,7 +11766,7 @@ table tbody {
     align-items: center;
 }
 
-.container_1, .container_2 {
+.container_1, .container_2, .container_3, .container_4 {
     display: flex;
     width: 100%;
     max-width: 1400px;
@@ -11779,7 +11779,7 @@ table tbody {
     gap: 50px;
 }
 
-.container_2 {
+.container_2, .container_3, .container_4 {
     display: flex;
     flex-direction: column;
 }
@@ -11790,7 +11790,7 @@ table tbody {
     width: 30%;
 }
 
-.AHS, .IU {
+.AHS, .IU, .ITYU, .DotB, .TheDigitalLab {
     width: 75%;
     display: flex;
     flex-direction: row-reverse;
@@ -11805,8 +11805,23 @@ table tbody {
     background-color: #fff;
 }
 
-.AHScontent, .IUcontent {
+.AHScontent, .IUcontent, .ITYUcontent, .DotBcontent, .TheDigitalLabcontent {
     width: 40%;
+}
+
+.XTN, .WF2021, .Recruit2021, .XTN2022, .ITTB2022, .UVBCH2022 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.XTNcontent, .WF2021content, .Recruit2021content, .XTN2022content, .ITTB2022content, .UVBCH2022content {
+    display: flex;
+    width: 30%;
 }
 
 .aaa000 {
@@ -11832,4 +11847,12 @@ table tbody {
     width: 20%;
     border-radius: 100%;
 
+}
+
+.aaa004 {
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 1.875rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
