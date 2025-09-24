@@ -12,6 +12,106 @@
             box-sizing: border-box;
         }
 
+        /* Enhanced Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Education Section Styles */
+        .education-item {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .education-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, transparent, rgba(37, 99, 235, 0.05), transparent);
+            transition: right 0.5s ease;
+        }
+
+        .education-item:hover {
+            transform: translateX(10px) scale(1.02);
+            border-left-width: 8px;
+            box-shadow: var(--shadow);
+            background: var(--white);
+        }
+
+        .education-item:hover::before {
+            right: 100%;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .degree {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover .degree {
+            transform: translateX(5px);
+        }
+
+        .institution {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .duration {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.95rem;
+            background: rgba(37, 99, 235, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover .duration {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .job-header .duration {
+            width: fit-content !important;
+        }
+
+        .education-item p {
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+
+        .education-item strong {
+            color: var(--primary-color);
+        }
+
         :root {
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
@@ -65,6 +165,16 @@
             height: 40px;
             background: rgba(37, 99, 235, 0.1);
             border: 2px solid var(--primary-color);
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .achievements {
+
         }
 
         /* Animated Background */
@@ -806,7 +916,7 @@
                     <img src="https://media.licdn.com/dms/image/v2/D5603AQGUqhVbNC7MCQ/profile-displayphoto-shrink_400_400/B56Zg1qlCbHQAk-/0/1753247011761?e=1761177600&v=beta&t=GwFs-5h7G-pGW6FYF0dUFLO4nhQFLYPwgVsck7rm9BI" alt="Doan Tran Thuan" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'profile-placeholder\'>DTT</div>'">
                 </div>
                 <h1>Doan Tran Thuan</h1>
-                <p class="subtitle">Software Engineer • Front-End Specialist • IT Consultant</p>
+                <p class="subtitle">Software Engineer • Front-End Specialist • IT Operation</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
@@ -824,11 +934,11 @@
                 </div>
 
                 <div class="social-links">
-                    <a href="#" class="social-btn">
+                    <a href="https://www.linkedin.com/in/dtrthuann/" class="social-btn">
                         <i class="fab fa-linkedin"></i>
                         LinkedIn
                     </a>
-                    <a href="#" class="social-btn">
+                    <a href="https://github.com/ThuanTheBadLuckCoder" class="social-btn">
                         <i class="fab fa-github"></i>
                         GitHub
                     </a>
@@ -882,7 +992,7 @@
                 <div class="timeline-item">
                     <div class="job-header">
                         <div>
-                            <div class="job-title">IT Consultant</div>
+                            <div class="job-title">IT Operation</div>
                             <div class="company">BOSCH Global Software Technologies Vietnam</div>
                         </div>
                         <div class="duration">Apr 2025 – Sep 2025</div>
@@ -891,7 +1001,7 @@
                         <strong>Tech Stack:</strong> Active Directory, SMT, ITSM.D, OracleSQL | <strong>Team:</strong> 7 members
                     </div>
                     <ul class="achievements">
-                        <li>Support End-User via SMT Ticket following ITIL Process with defined SLA & KPI requirements (L2 Level)</li>
+                        <li>Support End-User via SMT Ticket and ServiceNow following ITIL Process with defined SLA & KPI requirements (L2 Level)</li>
                         <li>Contribute to problem investigation and change management processes</li>
                         <li>Work with Oracle PL/SQL for database management and optimization</li>
                         <li>Provide support for new feature releases and hot-fixes implementation</li>
@@ -965,7 +1075,7 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">RAG-based Application for Web Front-end Development</div>
-                        <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/ThuanTheBadLuckCoder/MERN_AI_CHATBOT" class="github-link"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="tech-stack">
                         <strong>Tech Stack:</strong> ReactJS, Node.js, Express.js, MongoDB, Elasticsearch, LangChain, LLMs, Figma
@@ -982,7 +1092,7 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">Movie Ticket Booking Platform</div>
-                        <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/ThuanTheBadLuckCoder/movieTicketBooking" class="github-link"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="tech-stack">
                         <strong>Tech Stack:</strong> ReactJS, Node.js, Express.js, MongoDB, Figma
