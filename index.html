@@ -113,15 +113,15 @@
         }
 
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --bg-light: #f8fafc;
-            --white: #ffffff;
-            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+            --primary-color: #60a5fa;         /* Brighter blue */
+            --secondary-color: #2563eb;
+            --accent-color: #a78bfa;          /* Soft purple */
+            --text-dark: #f9fafb;             /* Near white for main text */
+            --text-light: #cbd5e1;            /* Lighter gray for secondary text */
+            --bg-light: #18181b;
+            --white: #23232a;
+            --shadow: 0 10px 25px rgba(0,0,0,0.7);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.85);
             --border-radius: 12px;
         }
 
@@ -129,7 +129,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #18181b 0%, #23232a 100%);
             min-height: 100vh;
             overflow-x: hidden;
             cursor: none;
@@ -173,10 +173,6 @@
             color: var(--primary-color);
         }
 
-        .achievements {
-
-        }
-
         /* Animated Background */
         .animated-bg {
             position: fixed;
@@ -185,7 +181,8 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* Change the purple (#764ba2) to teal (#14b8a6) for a fresh look */
+            /* background: linear-gradient(135deg, #667eea 0%, #14b8a6 100%); */
         }
 
         .floating-shapes {
@@ -381,7 +378,7 @@
             border-radius: 50%;
             margin: 0 auto 2rem;
             overflow: hidden;
-            border: 5px solid var(--white);
+            border: 5px solid var(--bg-light);
             box-shadow: var(--shadow);
             position: relative;
             background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
@@ -797,8 +794,8 @@
 
         /* Enhanced Footer */
         .footer {
-            background: var(--text-dark);
-            color: var(--white);
+            background: #111827;
+            color: var(--text-light);
             text-align: center;
             padding: 3rem 0;
             position: relative;
@@ -890,6 +887,48 @@
         /* Smooth Scrolling */
         html {
             scroll-behavior: smooth;
+        }
+
+        /* Headings and section titles */
+        .section-title,
+        .degree,
+        .job-title,
+        .project-title,
+        .skill-category h3 {
+            color: var(--primary-color);
+            text-shadow: 0 2px 8px rgba(37,99,235,0.15);
+        }
+
+        /* Main body text */
+        body,
+        .section,
+        .timeline-item,
+        .project-card,
+        .skill-category,
+        .education-item,
+        .institution,
+        .summary,
+        .skill-list li,
+        .achievements li,
+        .company,
+        .duration {
+            color: var(--text-dark);
+        }
+
+        /* Secondary text (subtitles, contact info, etc.) */
+        .subtitle,
+        .contact-item,
+        .github-link,
+        .footer,
+        .footer-links a,
+        .duration {
+            color: var(--text-light);
+        }
+
+        /* Links hover */
+        a:hover,
+        .footer-links a:hover {
+            color: var(--accent-color);
         }
     </style>
 </head>
